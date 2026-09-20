@@ -1,6 +1,6 @@
 ---
 name: korala-documents
-description: Draft a rental agreement, contract or other document, turn it into a Korala signing request for named people, send it when the user says so, and track who has signed. Works through the Korala MCP tools when Korala is connected, and through a no-account draft link when it is not.
+description: Draft a rental agreement, contract or other document, turn it into a Korala signing request for the people the user names, send it when the user says so, and track who has signed. Works through the Korala MCP tools when Korala is connected, and through a no-account draft link when it is not.
 ---
 
 # Korala documents
