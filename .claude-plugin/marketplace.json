@@ -1,0 +1,20 @@
+{
+  "name": "korala",
+  "owner": {
+    "name": "Korala",
+    "email": "support@korala.ai",
+    "url": "https://korala.ai"
+  },
+  "description": "Document signing for Claude Code: draft agreements, prepare signing requests, send and track them in Korala.",
+  "plugins": [
+    {
+      "name": "korala",
+      "source": "./plugins/korala",
+      "description": "Connects Claude Code to Korala. Draft an agreement in Markdown, turn it into a signing request for named people, send it when you say so, and track who has signed.",
+      "version": "0.1.0",
+      "homepage": "https://docs.korala.ai/ai-agents/claude-code",
+      "license": "MIT",
+      "keywords": ["e-signature", "documents", "contracts", "mcp"]
+    }
+  ]
+}
