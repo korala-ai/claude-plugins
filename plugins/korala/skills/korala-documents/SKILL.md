@@ -11,8 +11,8 @@ Look for the Korala MCP tools (`list_templates`, `create_markdown_template`,
 `create_document_from_template`, `send_document`, `get_document`).
 
 - **Tools available:** follow "With Korala connected".
-- **Tools listed but asking for authentication:** tell the user to run `/mcp`,
-  choose `korala`, and sign in. They pick what you may do on Korala's consent
+- **Tools listed but asking for authentication:** tell the user to run `/mcp`
+  (`/mcps` in Grok), choose `korala`, and sign in. They pick what you may do on Korala's consent
   page. Then continue.
 - **No tools:** follow "Without an account". Do not ask for API keys.
 

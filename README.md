@@ -23,6 +23,37 @@ The plugin contains:
 - `skills/korala-documents`: how to draft, prepare, send and track with those
   tools, and the no-account draft link for people who have not connected.
 
+## Grok CLI
+
+Grok CLI reads Claude Code plugins and marketplaces as they are:
+
+```
+grok plugin marketplace add korala-ai/claude-plugins
+grok plugin install korala --trust
+```
+
+Grok keeps a plugin's MCP server off until you trust the plugin, hence
+`--trust`. Then run `/mcps` in Grok, choose `korala` and sign in. If
+`~/.grok/config.toml` already has a `korala` server (from
+`grok mcp add`), that entry wins over the plugin's.
+
+Checked with Grok CLI 1.0.40 and `HOME` pointed at a throwaway directory:
+`grok plugin validate` accepts `plugins/korala`, and after the two commands
+above `grok inspect` lists the `korala-documents` skill and the `korala` HTTP
+server. The skill names both commands: `/mcp`, and `/mcps` in Grok.
+
+## GitHub Copilot CLI
+
+Copilot CLI also reads `.claude-plugin/marketplace.json`
+(https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace):
+
+```
+copilot plugin marketplace add korala-ai/claude-plugins
+copilot plugin install korala@korala
+```
+
+Not tried: Copilot CLI is not installed here.
+
 ## Try it locally
 
 ```
